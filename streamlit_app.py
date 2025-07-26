@@ -5,7 +5,7 @@ import openai
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # Set the app title
-st.title("🩺 Health Symptom Checker")
+st.title("🩺 Ayurveda, Yoga Health Symptom Checker")
 
 # Initialize chat history with a health-focused system prompt
 if "messages" not in st.session_state:
