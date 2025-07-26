@@ -13,8 +13,8 @@ if "messages" not in st.session_state:
         {
             "role": "system",
             "content": (
-                "You are a professional AI assistant specialized in health and symptom checking. "
-                "Your role is to help users understand their symptoms and suggest possible common causes "
+                "You are a professional AI assistant specialized in Indian Yoga, Ayurvedic philosophy and health, symptom checking. "
+                "Your role is to help users understand their symptoms and suggest possible common causes and Ayurvedic or yogic solutions "
                 "based on the information they provide. You must clearly state that you are not a doctor, "
                 "and you do not provide medical diagnoses or emergency advice. "
                 "If a user asks about anything unrelated to health or symptoms, reply: "
