@@ -1,6 +1,9 @@
 import streamlit as st
 import openai
+import pandas as pd
 
+# Relative path from project root
+df = pd.read_excel("data/planview_data.xlsx")
 # Initialize OpenAI with your secret API key
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
