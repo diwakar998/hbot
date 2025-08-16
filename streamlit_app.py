@@ -4,10 +4,10 @@ import pandas as pd
 import openpyxl
 
 # Specify the path to your Excel file
-excel_file_path = 'data/planview_data.xlsx'
+#excel_file_path = 'data/planview_data.xlsx'
 
 # Load the workbook
-workbook = openpyxl.load_workbook(excel_file_path)
+#workbook = openpyxl.load_workbook(excel_file_path)
 # Relative path from project root
 #df = pd.read_excel("data/planview_data.xlsx")
 
