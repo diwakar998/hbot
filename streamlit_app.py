@@ -1,9 +1,15 @@
 import streamlit as st
 import openai
 import pandas as pd
+import openpyxl
 
+# Specify the path to your Excel file
+excel_file_path = 'data/planview_data.xlsx'
+
+# Load the workbook
+workbook = openpyxl.load_workbook(excel_file_path)
 # Relative path from project root
-df = pd.read_excel("data/planview_data.xlsx")
+#df = pd.read_excel("data/planview_data.xlsx")
 
 #https://github.com/diwakar998/hbot/blob/cbe096fc062a9cb344c06b861f278966b3a9055e/data/planview_data.xlsx
 # Initialize OpenAI with your secret API key
