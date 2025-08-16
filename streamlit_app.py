@@ -3,7 +3,8 @@ import openai
 import pandas as pd
 
 # Relative path from project root
-#df = pd.read_excel("hbot/data/planview_data.xlsx")
+df = pd.read_excel("https://github.com/diwakar998/hbot/blob/cbe096fc062a9cb344c06b861f278966b3a9055e/data/planview_data.xlsx")
+#https://github.com/diwakar998/hbot/blob/cbe096fc062a9cb344c06b861f278966b3a9055e/data/planview_data.xlsx
 # Initialize OpenAI with your secret API key
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
