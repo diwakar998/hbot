@@ -67,7 +67,7 @@ if user_input:
 # Optional: Add footer disclaimer
 st.markdown("---")
 st.markdown(
-    "🛑 **Disclaimer:** This chatbot does not provide medical advice, diagnosis, or treatment. "
-    "Always consult a qualified healthcare provider for medical concerns.",
+   # "🛑 **Disclaimer:** This Agent does not provide medical advice, diagnosis, or treatment. "
+   # "Always consult a qualified healthcare provider for medical concerns.",
     unsafe_allow_html=True
 )
