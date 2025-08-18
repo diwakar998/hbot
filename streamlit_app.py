@@ -10,7 +10,8 @@ import openpyxl
 #workbook = openpyxl.load_workbook(excel_file_path)
 # Relative path from project root
 df = pd.read_excel("data/planview_data.xlsx")
-
+# Convert to string (you can filter/clean before sending)
+text_data = df.to_string()
 #https://github.com/diwakar998/hbot/blob/cbe096fc062a9cb344c06b861f278966b3a9055e/data/planview_data.xlsx
 # Initialize OpenAI with your secret API key
 openai.api_key = st.secrets["OPENAI_API_KEY"]
@@ -52,7 +53,7 @@ def get_response(messages):
 # Process user input
 if user_input:
     # Add user's message to history and show
-    st.session_state.messages.append({"role": "user", "content": user_input})
+    st.session_state.messages.append({"role": "user", "content": user_input+text_data})
     with st.chat_message("user"):
         st.markdown(user_input)
 
