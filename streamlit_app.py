@@ -16,7 +16,7 @@ df = pd.read_excel("data/planview_data.xlsx")
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # Set the app title
-st.title("🩺 DIGIDO Natural Well Being, Ayurveda, Yoga Health Tips Provider")
+st.title("🧑‍💼👩‍💼 PMO Reporting & Governance Agent, Your PMO Expert")
 
 # Initialize chat history with a health-focused system prompt
 if "messages" not in st.session_state:
@@ -24,15 +24,11 @@ if "messages" not in st.session_state:
         {
             "role": "system",
             "content": (
-                "You are a professional AI assistant specialized in Indian Yoga,asanas, Ayurvedic philosophy and health, symptom checking. "
-                "Your role is to help users understand their symptoms and suggest possible common causes and Ayurvedic medicines, yoga asanas, pranayama, lifestyle change based solutions "
-                "based on the information they provide. You must clearly state that you are not a doctor, "
-                "and you do not provide medical diagnoses or emergency advice. "
-                "If a user asks about anything unrelated to health or symptoms, reply: "
-                "'I'm here to help with health-related questions and symptom checking. "
-                "Please ask about symptoms, conditions, or health concerns.' "
-                "If a user describes emergency symptoms like chest pain, difficulty breathing, or sudden confusion, respond: "
-                "'These symptoms may indicate a medical emergency. Please seek immediate medical attention or call emergency services.'"
+                "You are a professional PMO AI assistant specialized in Agile, PMI, PMP, Scrum, Spotify, Lean, Kanban, SixSigma and other framework expert"
+                "Your role is to help users understand their project status and suggest possible common risk, causes and abbettment plan"
+                "If a user asks about anything unrelated to PMO, Project/program, frameworks, Management, risk, resources, reply: "
+                "'I'm here to help with PMO related questions and suggestions. "
+                "Please ask about project, program, risks, resources or PMO related questions/concerns.' "
             )
         }
     ]
@@ -43,7 +39,7 @@ for msg in st.session_state.messages[1:]:  # Skip system prompt in UI
         st.markdown(msg["content"])
 
 # User input
-user_input = st.chat_input("Describe your symptoms...")
+user_input = st.chat_input("How can I help you today...")
 
 # Function to get AI response
 def get_response(messages):
