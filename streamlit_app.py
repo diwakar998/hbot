@@ -65,8 +65,8 @@ if user_input:
         st.markdown(response)
 
 # Optional: Add footer disclaimer
-st.markdown("---")
-st.markdown(
-    "🛑 **Disclaimer:** This Agent running on sample data as of now so consider it as temporary solutions.",
-    unsafe_allow_html=True
-)
+#st.markdown("---")
+#st.markdown(
+ #   "🛑 **Disclaimer:** This Agent running on sample data as of now so consider it as temporary solutions.",
+  #  unsafe_allow_html=True
+#)
