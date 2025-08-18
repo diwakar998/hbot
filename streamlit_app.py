@@ -67,7 +67,6 @@ if user_input:
 # Optional: Add footer disclaimer
 st.markdown("---")
 st.markdown(
-   # "🛑 **Disclaimer:** This Agent does not provide medical advice, diagnosis, or treatment. "
-   # "Always consult a qualified healthcare provider for medical concerns.",
+    "🛑 **Disclaimer:** This Agent running on sample data as of now so consider it as temporary solutions.",
     unsafe_allow_html=True
 )
