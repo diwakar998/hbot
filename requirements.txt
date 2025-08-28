@@ -1,13 +1,13 @@
 pandas
 openpyxl
-streamlit==1.36.0
-openai==0.28
-langchain==0.0.350
+streamlit
+langchain
 langchain_openai
 langchain_core
 python-dotenv
 langchain_community
 langserve
+
 
 
 
