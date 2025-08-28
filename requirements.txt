@@ -6,6 +6,6 @@ langchain_core
 python-dotenv
 langchain_community
 langserve
-openai==0.28
+
 
 
